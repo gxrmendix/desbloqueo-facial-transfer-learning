@@ -1,0 +1,30 @@
+2026-09-25 15:56:27.247873: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+capas convolucionales que se refinan: ['bloque4_conva', 'bloque4_convb']
+Epoch 1/30
+95/95 - 15s - 161ms/step - auc: 0.9990 - exactitud: 0.9909 - loss: 0.0305 - val_auc: 0.9914 - val_exactitud: 0.9467 - val_loss: 0.1470
+Epoch 2/30
+95/95 - 14s - 148ms/step - auc: 0.9994 - exactitud: 0.9929 - loss: 0.0243 - val_auc: 0.9900 - val_exactitud: 0.9467 - val_loss: 0.1504
+Epoch 3/30
+95/95 - 15s - 153ms/step - auc: 0.9997 - exactitud: 0.9941 - loss: 0.0214 - val_auc: 0.9919 - val_exactitud: 0.9533 - val_loss: 0.1396
+Epoch 4/30
+95/95 - 15s - 158ms/step - auc: 0.9997 - exactitud: 0.9944 - loss: 0.0198 - val_auc: 0.9904 - val_exactitud: 0.9400 - val_loss: 0.1746
+Epoch 5/30
+95/95 - 15s - 163ms/step - auc: 0.9999 - exactitud: 0.9955 - loss: 0.0159 - val_auc: 0.9906 - val_exactitud: 0.9467 - val_loss: 0.1536
+Epoch 6/30
+95/95 - 16s - 173ms/step - auc: 0.9999 - exactitud: 0.9949 - loss: 0.0157 - val_auc: 0.9925 - val_exactitud: 0.9583 - val_loss: 0.1357
+Epoch 7/30
+95/95 - 17s - 179ms/step - auc: 0.9999 - exactitud: 0.9965 - loss: 0.0132 - val_auc: 0.9909 - val_exactitud: 0.9517 - val_loss: 0.1491
+Epoch 8/30
+95/95 - 17s - 181ms/step - auc: 0.9999 - exactitud: 0.9969 - loss: 0.0117 - val_auc: 0.9910 - val_exactitud: 0.9517 - val_loss: 0.1499
+Epoch 9/30
+95/95 - 17s - 184ms/step - auc: 0.9999 - exactitud: 0.9964 - loss: 0.0117 - val_auc: 0.9919 - val_exactitud: 0.9517 - val_loss: 0.1547
+Epoch 10/30
+95/95 - 17s - 181ms/step - auc: 1.0000 - exactitud: 0.9977 - loss: 0.0090 - val_auc: 0.9929 - val_exactitud: 0.9550 - val_loss: 0.1397
+Epoch 11/30
+95/95 - 18s - 188ms/step - auc: 1.0000 - exactitud: 0.9982 - loss: 0.0081 - val_auc: 0.9921 - val_exactitud: 0.9517 - val_loss: 0.1526
+Epoch 12/30
+95/95 - 18s - 191ms/step - auc: 1.0000 - exactitud: 0.9970 - loss: 0.0088 - val_auc: 0.9897 - val_exactitud: 0.9517 - val_loss: 0.1497
+Epoch 12: early stopping
+Restoring model weights from the end of the best epoch: 6.
+fase 3: AUC 0.9998 | umbral 0.5 -> {'umbral': 0.5, 'VP': 13, 'FN': 0, 'FP': 10, 'VN': 990, 'exactitud': 0.9901, 'precision': 0.5652, 'exhaustividad': 1.0, 'tasa_falsos_positivos': 0.01} | estricto -> {'umbral': 0.996273, 'VP': 11, 'FN': 2, 'FP': 0, 'VN': 1000, 'exactitud': 0.998, 'precision': 1.0, 'exhaustividad': 0.8462, 'tasa_falsos_positivos': 0.0}
