@@ -1,0 +1,118 @@
+2026-09-25 12:38:55.853055: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+entrenamiento 35330, validacion 1962, prueba 1962, reserva para fase 2 4328
+Model: "red_atributos"
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳
+┃ Layer (type)                               ┃ Output Shape                    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇
+│ imagen (InputLayer)                        │ (None, 64, 64, 3)               │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ escala (Rescaling)                         │ (None, 64, 64, 3)               │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque1_conva (Conv2D)                     │ (None, 64, 64, 32)              │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque1_bna (BatchNormalization)           │ (None, 64, 64, 32)              │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque1_relua (ReLU)                       │ (None, 64, 64, 32)              │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque1_convb (Conv2D)                     │ (None, 64, 64, 32)              │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque1_bnb (BatchNormalization)           │ (None, 64, 64, 32)              │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque1_relub (ReLU)                       │ (None, 64, 64, 32)              │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque1_pool (MaxPooling2D)                │ (None, 32, 32, 32)              │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque2_conva (Conv2D)                     │ (None, 32, 32, 64)              │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque2_bna (BatchNormalization)           │ (None, 32, 32, 64)              │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque2_relua (ReLU)                       │ (None, 32, 32, 64)              │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque2_convb (Conv2D)                     │ (None, 32, 32, 64)              │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque2_bnb (BatchNormalization)           │ (None, 32, 32, 64)              │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque2_relub (ReLU)                       │ (None, 32, 32, 64)              │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque2_pool (MaxPooling2D)                │ (None, 16, 16, 64)              │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque3_conva (Conv2D)                     │ (None, 16, 16, 128)             │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque3_bna (BatchNormalization)           │ (None, 16, 16, 128)             │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque3_relua (ReLU)                       │ (None, 16, 16, 128)             │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque3_convb (Conv2D)                     │ (None, 16, 16, 128)             │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque3_bnb (BatchNormalization)           │ (None, 16, 16, 128)             │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque3_relub (ReLU)                       │ (None, 16, 16, 128)             │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque3_pool (MaxPooling2D)                │ (None, 8, 8, 128)               │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque4_conva (Conv2D)                     │ (None, 8, 8, 256)               │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque4_bna (BatchNormalization)           │ (None, 8, 8, 256)               │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque4_relua (ReLU)                       │ (None, 8, 8, 256)               │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque4_convb (Conv2D)                     │ (None, 8, 8, 256)               │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque4_bnb (BatchNormalization)           │ (None, 8, 8, 256)               │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque4_relub (ReLU)                       │ (None, 8, 8, 256)               │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ bloque4_pool (MaxPooling2D)                │ (None, 4, 4, 256)               │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ rasgos (GlobalAveragePooling2D)            │ (None, 256)                     │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ densa_atributos (Dense)                    │ (None, 256)                     │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ dropout_atributos (Dropout)                │ (None, 256)                     │
+├────────────────────────────────────────────┼─────────────────────────────────┼
+│ atributos (Dense)                          │ (None, 40)                      │
+└────────────────────────────────────────────┴─────────────────────────────────┴
+ Total params: 1,251,208 (4.77 MB)
+ Trainable params: 1,249,288 (4.77 MB)
+ Non-trainable params: 1,920 (7.50 KB)
+/Users/macbookpro/miniconda3/envs/rna-tarea2/lib/python3.11/site-packages/keras/src/trainers/epoch_iterator.py:74: UserWarning: `shuffle=True` was passed, but will be ignored since the data `x` was provided as a generator. The generator is expected to yield already-shuffled data.
+  self.data_adapter = data_adapters.get_data_adapter(
+Epoch 1/15
+277/277 - 367s - 1s/step - exactitud: 0.8573 - loss: 0.3278 - val_exactitud: 0.8063 - val_loss: 0.5573 - learning_rate: 0.0010
+Epoch 2/15
+277/277 - 347s - 1s/step - exactitud: 0.8844 - loss: 0.2649 - val_exactitud: 0.8726 - val_loss: 0.2990 - learning_rate: 0.0010
+Epoch 3/15
+277/277 - 353s - 1s/step - exactitud: 0.8906 - loss: 0.2502 - val_exactitud: 0.8718 - val_loss: 0.2892 - learning_rate: 0.0010
+Epoch 4/15
+277/277 - 352s - 1s/step - exactitud: 0.8945 - loss: 0.2408 - val_exactitud: 0.8448 - val_loss: 0.3644 - learning_rate: 0.0010
+Epoch 5/15
+277/277 - 354s - 1s/step - exactitud: 0.8975 - loss: 0.2336 - val_exactitud: 0.8944 - val_loss: 0.2442 - learning_rate: 0.0010
+Epoch 6/15
+277/277 - 345s - 1s/step - exactitud: 0.9001 - loss: 0.2279 - val_exactitud: 0.8615 - val_loss: 0.3441 - learning_rate: 0.0010
+Epoch 7/15
+
+Epoch 7: ReduceLROnPlateau reducing learning rate to 0.0003000000142492354.
+277/277 - 347s - 1s/step - exactitud: 0.9016 - loss: 0.2244 - val_exactitud: 0.8626 - val_loss: 0.3247 - learning_rate: 0.0010
+Epoch 8/15
+277/277 - 912s - 3s/step - exactitud: 0.9064 - loss: 0.2136 - val_exactitud: 0.9034 - val_loss: 0.2206 - learning_rate: 3.0000e-04
+Epoch 9/15
+277/277 - 346s - 1s/step - exactitud: 0.9077 - loss: 0.2102 - val_exactitud: 0.9029 - val_loss: 0.2237 - learning_rate: 3.0000e-04
+Epoch 10/15
+
+Epoch 10: ReduceLROnPlateau reducing learning rate to 9.000000427477062e-05.
+277/277 - 356s - 1s/step - exactitud: 0.9087 - loss: 0.2085 - val_exactitud: 0.9012 - val_loss: 0.2259 - learning_rate: 3.0000e-04
+Epoch 11/15
+277/277 - 355s - 1s/step - exactitud: 0.9108 - loss: 0.2035 - val_exactitud: 0.9070 - val_loss: 0.2124 - learning_rate: 9.0000e-05
+Epoch 12/15
+277/277 - 337s - 1s/step - exactitud: 0.9115 - loss: 0.2023 - val_exactitud: 0.9069 - val_loss: 0.2129 - learning_rate: 9.0000e-05
+Epoch 13/15
+277/277 - 339s - 1s/step - exactitud: 0.9116 - loss: 0.2018 - val_exactitud: 0.9080 - val_loss: 0.2095 - learning_rate: 9.0000e-05
+Epoch 14/15
+277/277 - 346s - 1s/step - exactitud: 0.9121 - loss: 0.2008 - val_exactitud: 0.9081 - val_loss: 0.2105 - learning_rate: 9.0000e-05
+Epoch 15/15
+
+Epoch 15: ReduceLROnPlateau reducing learning rate to 2.700000040931627e-05.
+277/277 - 350s - 1s/step - exactitud: 0.9126 - loss: 0.1998 - val_exactitud: 0.9064 - val_loss: 0.2116 - learning_rate: 9.0000e-05
+Restoring model weights from the end of the best epoch: 13.
+exactitud media en prueba 0.9084 (linea base 0.8023), 96.8 min

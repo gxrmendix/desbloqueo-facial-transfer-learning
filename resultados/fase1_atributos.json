@@ -1,0 +1,302 @@
+{
+ "imagenes": {
+  "entrenamiento": 35330,
+  "validacion": 1962,
+  "prueba": 1962,
+  "reserva_fase2": 4328
+ },
+ "parametros": 1251208,
+ "epocas_corridas": 15,
+ "minutos_entrenamiento": 96.8,
+ "exactitud_media_prueba": 0.9084,
+ "linea_base_media_prueba": 0.8023,
+ "por_atributo": {
+  "5_o_Clock_Shadow": {
+   "exactitud": 0.9332,
+   "linea_base": 0.893,
+   "mejora": 0.0403
+  },
+  "Arched_Eyebrows": {
+   "exactitud": 0.8216,
+   "linea_base": 0.7258,
+   "mejora": 0.0958
+  },
+  "Attractive": {
+   "exactitud": 0.8124,
+   "linea_base": 0.5316,
+   "mejora": 0.2808
+  },
+  "Bags_Under_Eyes": {
+   "exactitud": 0.841,
+   "linea_base": 0.79,
+   "mejora": 0.051
+  },
+  "Bald": {
+   "exactitud": 0.9898,
+   "linea_base": 0.9796,
+   "mejora": 0.0102
+  },
+  "Bangs": {
+   "exactitud": 0.9541,
+   "linea_base": 0.8374,
+   "mejora": 0.1167
+  },
+  "Big_Lips": {
+   "exactitud": 0.7778,
+   "linea_base": 0.761,
+   "mejora": 0.0168
+  },
+  "Big_Nose": {
+   "exactitud": 0.8323,
+   "linea_base": 0.7548,
+   "mejora": 0.0775
+  },
+  "Black_Hair": {
+   "exactitud": 0.895,
+   "linea_base": 0.7441,
+   "mejora": 0.1509
+  },
+  "Blond_Hair": {
+   "exactitud": 0.948,
+   "linea_base": 0.871,
+   "mejora": 0.077
+  },
+  "Blurry": {
+   "exactitud": 0.9669,
+   "linea_base": 0.9577,
+   "mejora": 0.0092
+  },
+  "Brown_Hair": {
+   "exactitud": 0.8491,
+   "linea_base": 0.7813,
+   "mejora": 0.0678
+  },
+  "Bushy_Eyebrows": {
+   "exactitud": 0.922,
+   "linea_base": 0.8578,
+   "mejora": 0.0642
+  },
+  "Chubby": {
+   "exactitud": 0.9439,
+   "linea_base": 0.9378,
+   "mejora": 0.0061
+  },
+  "Double_Chin": {
+   "exactitud": 0.9536,
+   "linea_base": 0.9506,
+   "mejora": 0.0031
+  },
+  "Eyeglasses": {
+   "exactitud": 0.9959,
+   "linea_base": 0.9383,
+   "mejora": 0.0576
+  },
+  "Goatee": {
+   "exactitud": 0.9572,
+   "linea_base": 0.9266,
+   "mejora": 0.0306
+  },
+  "Gray_Hair": {
+   "exactitud": 0.9806,
+   "linea_base": 0.9546,
+   "mejora": 0.026
+  },
+  "Heavy_Makeup": {
+   "exactitud": 0.9159,
+   "linea_base": 0.5953,
+   "mejora": 0.3206
+  },
+  "High_Cheekbones": {
+   "exactitud": 0.8644,
+   "linea_base": 0.5133,
+   "mejora": 0.3512
+  },
+  "Male": {
+   "exactitud": 0.9817,
+   "linea_base": 0.5933,
+   "mejora": 0.3884
+  },
+  "Mouth_Slightly_Open": {
+   "exactitud": 0.9337,
+   "linea_base": 0.5102,
+   "mejora": 0.4235
+  },
+  "Mustache": {
+   "exactitud": 0.9638,
+   "linea_base": 0.9587,
+   "mejora": 0.0051
+  },
+  "Narrow_Eyes": {
+   "exactitud": 0.8955,
+   "linea_base": 0.8853,
+   "mejora": 0.0102
+  },
+  "No_Beard": {
+   "exactitud": 0.9608,
+   "linea_base": 0.844,
+   "mejora": 0.1167
+  },
+  "Oval_Face": {
+   "exactitud": 0.7559,
+   "linea_base": 0.7064,
+   "mejora": 0.0494
+  },
+  "Pale_Skin": {
+   "exactitud": 0.9699,
+   "linea_base": 0.9613,
+   "mejora": 0.0087
+  },
+  "Pointy_Nose": {
+   "exactitud": 0.7661,
+   "linea_base": 0.7181,
+   "mejora": 0.0479
+  },
+  "Receding_Hairline": {
+   "exactitud": 0.9261,
+   "linea_base": 0.9195,
+   "mejora": 0.0066
+  },
+  "Rosy_Cheeks": {
+   "exactitud": 0.9495,
+   "linea_base": 0.9302,
+   "mejora": 0.0194
+  },
+  "Sideburns": {
+   "exactitud": 0.9648,
+   "linea_base": 0.9373,
+   "mejora": 0.0275
+  },
+  "Smiling": {
+   "exactitud": 0.9205,
+   "linea_base": 0.5031,
+   "mejora": 0.4174
+  },
+  "Straight_Hair": {
+   "exactitud": 0.8191,
+   "linea_base": 0.791,
+   "mejora": 0.028
+  },
+  "Wavy_Hair": {
+   "exactitud": 0.815,
+   "linea_base": 0.6651,
+   "mejora": 0.1498
+  },
+  "Wearing_Earrings": {
+   "exactitud": 0.9057,
+   "linea_base": 0.8063,
+   "mejora": 0.0994
+  },
+  "Wearing_Hat": {
+   "exactitud": 0.9913,
+   "linea_base": 0.9628,
+   "mejora": 0.0285
+  },
+  "Wearing_Lipstick": {
+   "exactitud": 0.9348,
+   "linea_base": 0.5061,
+   "mejora": 0.4286
+  },
+  "Wearing_Necklace": {
+   "exactitud": 0.8756,
+   "linea_base": 0.8751,
+   "mejora": 0.0005
+  },
+  "Wearing_Necktie": {
+   "exactitud": 0.9531,
+   "linea_base": 0.9276,
+   "mejora": 0.0255
+  },
+  "Young": {
+   "exactitud": 0.8991,
+   "linea_base": 0.789,
+   "mejora": 0.1101
+  }
+ },
+ "historia": {
+  "exactitud": [
+   0.85732,
+   0.88436,
+   0.89058,
+   0.8945,
+   0.89747,
+   0.90009,
+   0.90155,
+   0.90641,
+   0.90773,
+   0.90872,
+   0.91082,
+   0.91145,
+   0.9116,
+   0.91208,
+   0.9126
+  ],
+  "loss": [
+   0.32782,
+   0.26485,
+   0.25015,
+   0.24081,
+   0.23355,
+   0.22793,
+   0.22443,
+   0.21358,
+   0.21019,
+   0.20849,
+   0.2035,
+   0.20228,
+   0.20183,
+   0.20082,
+   0.19981
+  ],
+  "val_exactitud": [
+   0.80633,
+   0.8726,
+   0.87179,
+   0.84479,
+   0.89438,
+   0.86148,
+   0.86256,
+   0.90339,
+   0.90288,
+   0.9012,
+   0.90696,
+   0.90694,
+   0.90804,
+   0.90809,
+   0.90645
+  ],
+  "val_loss": [
+   0.5573,
+   0.29899,
+   0.28924,
+   0.36438,
+   0.24424,
+   0.34413,
+   0.32472,
+   0.22055,
+   0.22369,
+   0.22592,
+   0.21235,
+   0.21295,
+   0.20945,
+   0.21046,
+   0.21156
+  ],
+  "learning_rate": [
+   0.001,
+   0.001,
+   0.001,
+   0.001,
+   0.001,
+   0.001,
+   0.001,
+   0.0003,
+   0.0003,
+   0.0003,
+   9e-05,
+   9e-05,
+   9e-05,
+   9e-05,
+   9e-05
+  ]
+ }
+}
