@@ -1,0 +1,19 @@
+{
+ "sesiones": {
+  "1": {
+   "fotos": 33,
+   "con_rostro": 26,
+   "sin_rostro": 7
+  },
+  "2": {
+   "fotos": 4,
+   "con_rostro": 2,
+   "sin_rostro": 2
+  },
+  "3": {
+   "fotos": 11,
+   "con_rostro": 11,
+   "sin_rostro": 0
+  }
+ }
+}
