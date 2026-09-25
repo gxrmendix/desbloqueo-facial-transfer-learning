@@ -1,0 +1,18 @@
+# Datos pesados que se regeneran con preparar_celeba.py
+datos/
+
+# Fotos personales: nunca se suben al repositorio
+fotos-rostro/
+rostros-propios/
+*.jpg
+*.jpeg
+*.JPG
+*.JPEG
+*.heic
+*.HEIC
+
+# Python y sistema
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
